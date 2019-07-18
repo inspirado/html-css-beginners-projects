@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.container > h1 {
+	text-align: center;
+	margin-top:100px;
+	margin-bottom: 100px;
+	font-size: 80px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.product{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.product-card {
+	flex:1;
+	flex-basis: 21.875%;
+	max-width: 21.875%;
+	margin-right:3.125%;
+	margin-bottom: 20px;
+}
+
+.product-buy{
+
+}
+
+.product-img {
+
+}
+
+.product-img img {
+	width: 100%;
+}
+
+.product-info{
+
+}
+
