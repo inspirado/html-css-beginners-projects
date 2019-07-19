@@ -11,7 +11,7 @@ body {
 }
 
 .container{
-	width: 1280px;
+	width:85%;
 	margin: 0 auto;
 }
 
@@ -29,24 +29,28 @@ body {
 	text-align: center;
 	font-size: 22px;
 }
+
 .product{
 	display: flex;
 	flex-wrap:wrap;
+	justify-content: space-between;
+	flex-direction: row;
 }
+
 
 .product-card {
 	flex:1;
-	flex-basis: 21.875%;
-	max-width: 21.875%;
-	margin-right:3.125%;
+	min-width: 23.44%;
+	max-width: 23.44%;
 	margin-bottom: 40px;
 	position: relative;
 	box-shadow: 0 0 1px 0 rgb(0, 0, 0, 0.25)
 }
 
+
 .product-card:hover {
 	cursor: pointer;
-	box-shadow:0 0 2px 0 rgb(0, 0, 0, 0.5);
+	box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.3);
 	transition:0.5s ease;
 }
 
@@ -90,5 +94,80 @@ body {
 	color:green;
 	margin-bottom:10px;
 }
+
+
+
+/*Responsive Design */
+
+@media screen and (min-width: 1481px) and (max-width: 1920px){
+
+	.product {
+		justify-content: flex-start;
+	}
+
+	.product-card {
+		margin-right: 1%;
+	}
+
+
+	.product div:nth-child(4){
+		margin-right: 0;
+	}
+
+}
+
+@media screen and (max-width: 1480px){
+
+	.product {
+		justify-content: flex-start;
+	}
+
+	.product-card{
+		max-width: 28%;
+		min-width: 28%;
+		margin-bottom: 8%;
+		margin-right: 8%;
+	}
+
+	.product div:nth-child(3){
+		margin-right: 0;
+	}
+
+}
+
+
+@media screen and (max-width: 1080px){
+	.product{
+		justify-content: space-between;
+	}
+	
+	.product-card{
+		min-width: 46%;
+		max-width: 46%;
+		margin-bottom: 8%;
+		margin-right: 0;
+	}
+
+	.product div:nth-child(3){
+		margin-right: 0;
+	}
+
+}
+
+
+@media screen and (max-width: 600px){
+
+	.product{
+		justify-content: center;
+	}
+
+	.product-card{
+		max-width: 70%;
+		min-width: 70%;
+		margin-bottom: 10%;
+	}
+
+}
+
 
 
