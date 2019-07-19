@@ -11,7 +11,7 @@ body {
 }
 
 .container{
-	width:85%;
+	width:1280px;
 	margin: 0 auto;
 }
 
@@ -31,26 +31,31 @@ body {
 }
 
 .product{
+	margin: 0 auto;
+	max-width: 1260px;
 	display: flex;
 	flex-wrap:wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-direction: row;
 }
 
 
 .product-card {
 	flex:1;
-	min-width: 23.44%;
-	max-width: 23.44%;
+	min-width: 300px;
+	max-width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;	
 	position: relative;
-	box-shadow: 0 0 1px 0 rgb(0, 0, 0, 0.25)
+	box-shadow: 0 0 1px 0 rgb(0, 0, 0, 0.25);
 }
 
 
 .product-card:hover {
 	cursor: pointer;
-	box-shadow:0 0 2px 2px rgba(0, 0, 0, 0.3);
-	transition:0.5s ease;
+	box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.25);
+	transition: 0.5s all;
+	border-bottom-left-radius: 50px;
 }
 
 .product-buy a{ 
@@ -61,6 +66,8 @@ body {
 .product-buy a:hover button{
 	background-color: green;
 	color:#fff;
+	border-bottom-right-radius: 10px;
+	transition: 0.5s all;
 }
 
 .product-buy button{
@@ -99,16 +106,13 @@ body {
 /*Responsive Design */
 
 @media screen and (min-width: 1481px) and (max-width: 1920px){
-
-	.product {
-		justify-content: flex-start;
+	.container {
+		width: 1280px;
 	}
 
-	.product-card {
-		margin-right: 2.08%;
-		margin-bottom: 2.08%;
+	.product{
+		width: 1280px;
 	}
-
 
 	.product div:nth-child(4n){
 		margin-right: 0;
@@ -117,16 +121,12 @@ body {
 }
 
 @media screen and (max-width: 1480px){
-
-	.product {
-		justify-content: flex-start;
+	.container {
+		width: 1000px;
 	}
 
-	.product-card{
-		max-width: 28%;
-		min-width: 28%;
-		margin-bottom: 8%;
-		margin-right: 8%;
+	.product {
+		width: 940px;
 	}
 
 	.product div:nth-child(3n){
@@ -137,33 +137,44 @@ body {
 
 
 @media screen and (max-width: 1080px){
-	.product{
-		justify-content: space-between;
+
+	.container {
+		width: 768px;
 	}
-	
-	.product-card{
-		min-width: 46%;
-		max-width: 46%;
-		margin-bottom: 8%;
+
+	.product {
+		width: 620px;
+	}
+
+	.product div:nth-child(2n){
 		margin-right: 0;
 	}
 
+
 	.product div:nth-child(3n){
-		margin-right: 0;
+		margin-right: auto;
 	}
+
 
 }
 
 
-@media screen and (max-width:768px) {
-	.product{
-		justify-content: center;
+
+@media screen and (max-width: 800px){
+	.container {
+		width: 400px;
 	}
 
-	.product-card{
-		max-width: 70%;
-		min-width: 70%;
-		margin-bottom: 10%;
+	.product {
+		width: 300px;
+	}
+
+	.container > h1 {
+		font-size: 50px;
+	}
+
+	.container > h3 {
+		font-size: 16px;
 	}
 
 }
