@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.project-title {
+  width: fit-content;
+  padding: 20px;
+  margin: 0 auto 50px;
+  border: 5px solid #000;
+}
+
+.project-title h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  width: fit-content;
+}
+
+.my-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex-basis: 32%;
+  margin-bottom: 15px;
+}
+.item img {
+  max-width: 100%;
+}
+.item {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid #000;
+  background: #000;
+}
+.item-info {
+  position: absolute;
+  top: 187px;
+  width: 100%;
+  background: rgba(112, 110, 110, 0.5);
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 11px;
+  padding-top: 10px;
+  transition: 0.5s ease;
+}
+
+.button {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  width: fit-content;
+  background: #ddd;
+}
+
+.button i,
+.button span {
+  color: #000;
+  padding-left: 10px;
+}
+
+.button span {
+  padding-right: 10px;
+}
+
+.info-title h2 {
+  color: #fff;
+}
+
+.info-description {
+  color: #fff;
+  font-size: 12px;
+  display: none;
+}
+
+.item:hover .info-description {
+  display: block;
+  transition: 2s ease;
+}
+
+.item:hover .item-info {
+  background: rgba(113, 113, 113, 0.9);
+  transition: 0.5s ease;
+  height: 200px;
+  top: 120px;
+}
+.item:hover .button {
+  display: none;
+}
+
+.item:hover h2 {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background: #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer p {
+  font-size: 12px;
+  text-transform: capitalize;
+}
